@@ -1,0 +1,20 @@
+﻿Task1
+1.	Chức năng của var và const
+Var và const đều là các công cụ dùng để khai báo biến trong javascript, tuy nhiên có 1 số sự  nhau trong khi sử dụng 2 từ khóa này để khai báo biến trong j4s.
+2.	Những sự  khác nhau cơ bản của let và var
+Let
+-	Là một công cụ khai báo biến chỉ có chức năng sử dụng trong 1 scope ( bất cứ thứ gì được bao bọc xung quanh cặp dấu {}, kể cả các statement như if hay loop), nếu sử dụng let để khai báo biến trong 1 scope bất kì, người dùng không có khả năng show lại giá trị của biến đó ở ngoài scope
+-	Khi khai báo biến bằng let, nếu người dùng không gán 1 giá trị cho biến đó, chương trình sẽ báo lỗi referenceError khi người dùng truy cập vào biến	Var
+-	Khi ta khai báo biến bằng var trong 1 scope, người dùng có khả năng gọi lại giá trị của biến đã khai báo trong 1 số trường hợp như câu lệnh if hay vòng lặp(trừ các trường hợp khai báo biến dùng var trong các function scope thì không thể show giá trị bên ngoài)
+
+-	Khi khai báo biến bằng var, nếu người dùng không gán 1 giá trị cho biến đó, chương trình sẽ chỉ báo biến chưa xác định(undifined) khi người dùng truy cập vào biến
+3.	Khác nhau giữa let vs const
+Let
+-	Biến khai báo bằng let có khả năng khai báo lại, thay đổi giá trị trong khi chạy chương trình	Const
+-	Biến khai báo bằng const không thể thay đổi hay khai báo lại trong toàn bộ chương trình
+4.	Trong lập trình ngày nay, người ta không còn sử dụng var để khai báo biến nhiều, đa phần let vs const
+-	 Người lập trình nên sử dụng const để khai  báo biến nếu sợ giá trị của biến bị thay đổi mà không biết, sau đó nếu thấy cần thay đổi giá trị của biến thì mới sửa const thành let trong quá trình viết code.
+-	Nếu kiểm soát được giá trị của biến trong khi viết code và biết trước giá trị của biến cần thay đổi thì nên khai báo bằng let để tiết kiệm thời gian
+
+Task 2;
+1,2: Boolean là là kiểu dữ liệu logic chỉ có 2 giá trị là đúng hoặc sai, có thể sử dụng như là kết quả của 1 phép so sánh
