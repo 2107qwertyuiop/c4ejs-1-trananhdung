@@ -1,8 +1,5 @@
-let n = Number(prompt('Enter a number between 0 and 9'));
-if(0 <= n <= 4.5){
-    alert('lower half of 9')
-}else if(4.5 < n <= 9){
-    alert('higher half of 9');
-}else{
-    alert(' Unexcepted! ');
-}
+let nhap = prompt('Enter a sequence of number, separated by commands(,): ');
+let a = nhap.split(',');
+
+let min = Math.min(...a);
+alert(`The smallest number is ${min} `);

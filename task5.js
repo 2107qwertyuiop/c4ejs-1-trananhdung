@@ -1,6 +1,7 @@
-let age = Number(prompt('enter your age: '));
-if(age < 14){
-    alert('You re not old enough to watch this content');
-}else{
-    alert('enjoy!');
+let nhap = prompt('Enter a sequence of number, separated by commands(,): ');
+let a = nhap.split(',');
+let s = 0;
+for(i = 0; i < a.length; i++){
+    s += Number(a[i]);
 }
+console.log(s);
